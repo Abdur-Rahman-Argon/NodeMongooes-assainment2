@@ -17,4 +17,8 @@ app.get("/", (req, res) => {
   res.send("Wow, Our Tour server running!!!!");
 });
 
+app.get("/home", (req, res) => {
+  res.send({ message: "this is Home Page" });
+});
+
 module.exports = app;
