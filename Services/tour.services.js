@@ -1,7 +1,7 @@
 const Tour = require("../Modal/Tour");
 
 exports.getToursService = async (filter, queries) => {
-  console.log(filter);
+  // console.log(filter);
   const tours = await Tour.find(filter)
     .sort(queries.sortBy)
     .select(queries.fields)
